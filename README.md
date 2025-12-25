@@ -13,3 +13,7 @@ Docker is used to containerize the application.
 ```bash
 pip install -r requirements.txt
 python app.py
+```
+## Run with Docker
+docker build -t kv-store .
+docker run -p 5000:5000 kv-store
